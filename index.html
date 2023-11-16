@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI Assignment 6 - JQuery</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $( function() {
+          $( ".widget button" )
+            .eq( 0 ).button()
+            .end().eq( 1 ).button()
+            .end().eq( 2 ).button();
+        } );
+    </script>
+    <style>
+      .top {
+        width: 50%;
+        margin: auto;
+        background: #ffffff92;
+        color: #000000;
+        text-align: center;
+        padding-top: .9em;
+        padding-bottom: 1.7em;
+        border-radius: 5px;
+        max-width: 500px;
+      }
+      .widget{
+        width: 55%;
+        margin: auto;
+        background: #ffffff92;
+        color: #000000;
+        text-align: center;
+        padding-top: .9em;
+        padding-bottom: 1.7em;
+        border-radius: 5px;
+        max-width: 600px;
+      }
+    </style>    
+</head>
+<body>    
+    <div class="top">
+        <h1 align="center"> HCI Assignment 6</h1>
+        <h2 align="center"> Jquery</h2>
+    </div>    
+<hr>
+    <div class="widget">
+      <h3 align="center">Select a practice</h3>
+        <button onclick="location.href='FAQ/FAQ.html';"> FAQ</button>
+        <button onclick="location.href='Image-gallery-with-filters/Image-gallery-with-filters.html';">Image gallery with filters</button>
+        <button onclick="location.href='Tabbed-widget/Tabbed-widget.html';">Tabbed widgets</button>
+    </div>            
+</body>
+</html>
