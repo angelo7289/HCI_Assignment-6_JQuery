@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #000000;
+    background-image: url("pexels-josh-hild-3859774.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #05181a;
+    font-family: Arial;
+}
+
+ul, li {
+    list-style: none;
+}
+
+#container {
+    width: 60%;
+    margin: 0 20%;
+    overflow: auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.FAQ-title {
+    height: 2.5em;
+    width: 85%;
+    margin-left: 7%;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding-top: .9em;
+    border-radius: 5px;
+}
+
+i {
+    margin-right: 1em;
+}
+
+.faq li {
+    padding: 1.24em;
+}
+
+.faq li.q {
+    font-weight: bold;
+    font-size: 120%;
+    border: 1px #ccc solid;
+    cursor: pointer;
+}
+
+.faq li.q:nth-child(1),
+.faq li.q:nth-child(5),
+.faq li.q:nth-child(9) {
+    background: #e7e7e7;
+}
+
+.faq li.q:nth-child(3),
+.faq li.q:nth-child(7) {
+    background: #f9f9f9;
+}
+
+.faq li.a {
+    font-weight: bold;
+    color: #000000;
+    background: #fff;
+    display: none;
+}
+
+img {
+    margin-right: .5em;
+}
+
+footer {
+    height: 4em;
+    padding: 2em;
+    margin-top: 2em;
+    margin-left: 20%;
+    background: #ffffff;
+    width: 53%;
+    border-radius: 5px;
+}
+
+footer h3 {
+    width: 75%;
+    font-size: 95%;
+    margin: 0 14%;
+}
+
+footer a {
+    color: #11a3b6;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    #container {
+        width: 90%;
+        margin: 0 5%;
+    }
+    
+    .title {
+        width: 90%;
+        margin: 0 5%;
+        height: 3.5em;
+    }
+    
+    .faq li {
+        text-align: center;
+    }
+    
+    .faq li.a {
+        width: 85%;
+        margin-left: 5%;
+    }
+    
+    footer h3 {
+        width: 90%;
+        margin: 0 5%;
+        text-align: center;
+    }
+}
